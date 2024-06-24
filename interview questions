@@ -1,0 +1,403 @@
+max val and second max val & min val and second min val - l = [1, 2, 3, 4, 5, 6, 7, 8]
+121 is palindrome or not. write code without any inbuilt function
+
+
+121/10
+
+------------------
+
+def fn(lis):
+	output = sum(lis)
+	def fn2(a):
+		return a*2
+lis1=[1,2,3]	
+obj = fn(lis1)
+
+
+how to apply sql to a df
+second max in employee id
+how to read a csv using pyspark
+decorator example
+--------------------
+nodeA nodeB nodeC nodeD  nodeE NODEF
+AB BC CD DA DB CA 4 6
+DE EA EB EC 5 10
+
+
+output connections = (n*(n-1))/2
+
+
+
+lis=[1,2,3,4,5,6]
+lis_2=[]
+
+	
+
+	input = A B C D
+	first connect = AB BC CD DA DB CA
+	second input = E F
+	seceond connect = DE EA EB EC 
+
+-----------
+
+for i in range(1,11):
+`	n = i+1
+	mul = i*n
+	if i == 2 and n%2 !=0:
+		print(mul)
+		
+		
+ 2
+ 6
+ 10
+ 14
+ 18
+ 
+
+name, ph, mail_id
+len(name)>5
+len(ph) = 10 and startswith() = 9
+mail_id 
+
+
+import re
+dic={}
+lis=[]
+def fn():
+	name = input('please enter the name:',)
+	ph = input('please enter the phone num:',)
+	mail_id = input('please enter the mail_id:')
+	if len(name)>5 and type(name) = str:
+		if len(ph) =10 and startswith() = 9:
+			ph_num = re.search([^9'/d+'],ph)
+			if ph_num:
+				mail = re.search(['@'/s+'mail.com'],mail_id)
+				lis.append(ph_num, mail)
+				dic.key() = name
+				dic.value() = lis
+				return dic
+				
+obj = fn()
+				
+				
+d1={1:arun,2:raj}
+d2={1:priya,3:anu}
+d3={1:[arun,priya],2:raj,3:anu}
+
+-------------------------
+
+CGI
+
+reduceby key groupby key
+constraints in sql
+where and having
+window in sql
+cache and persist
+lambda and comprehension in python
+decorator
+broadcast variables in pyspark
+flatmap
+ accumulators, and broadcast variables
+
+
+
+
+
+what are all the libery we used
+
+
+
+-----
+
+[12:26 PM] Ganapathy Subramanium Sundar Ramaswamy
+Programming Assignment: Building a Simple RESTful API
+Objective:Create a basic RESTful API using Python with the flexibility to choose any web framework. The API should allow users to perform CRUD operations on a resource called "tasks."
+Requirements:
+Task Model:
+Define a Task model or class with the following attributes:
+id (unique identifier)
+title (string)
+description (string)
+done (boolean indicating task completion status)
+API Endpoints:
+Implement the following CRUD operations for tasks:
+GET /tasks: Retrieve a list of all tasks.
+GET /tasks/<id>: Retrieve details of a specific task by its ID.
+POST /tasks: Create a new task.
+PUT /tasks/<id>: Update details of a specific task by its ID.
+DELETE /tasks/<id>: Delete a specific task by its ID.
+Data Storage:
+Store tasks in memory (no need for a database). Ensure the API state is preserved during the server's runtime.
+Input Validation:
+Implement basic input validation to ensure that required fields are provided and have appropriate data types.
+
+
+-----
+
+decortor --> to add functionality to existing code
+data encapsulation --> wraping up of mtds and variables inside a class
+data abstraction -->
+diff b/w compiler and interpretor
+list.update?
+interview question
+extend()
+pandas
+libraries I used
+how to create a class
+name==main?
+__? _?
+array and list diff
+deepcopy vs shallow copy ==> deepcopy changes inner address also, so source values will not be changed. shallow copy changes only outer address so source value will be changed. a= [[1],[2],[3]] b=deepcopy(a) a[0]=100 output ==> a=[[1],[2],[3]] //  b=copy(a) a[0]=100 output ==> a=[[100],[2],[3]] 
+pickle and unpickle
+git commands
+
+--------------
+
+class ClassA:
+    def some_function(self):
+        variable = 10
+        print("Class A:", variable)
+
+class ClassB:
+    def some_function(self):
+        variable = 20
+        print("Class B:", variable)
+
+# Create instances of each class
+obj_a = ClassA()
+obj_b = ClassB()
+
+# Call the function with the same name on each object
+obj_a.some_function()
+obj_b.some_function()
+
+
+class ParentClass:
+    def some_function(self):
+        variable = 10
+        print("Parent Class Variable:", variable)
+
+class ChildClass(ParentClass):
+    def some_function(self):
+        variable = 20
+        print("Child Class Variable:", variable)
+        super().some_function()  # Call the parent class function
+
+# Create an instance of the child class
+obj = ChildClass()
+
+# Call the function on the single instance
+obj.some_function()
+
+
+----------------------
+
+Microservises
+Design pattern in python
+
+linked list multithreading and multi processing
+gil
+rank
+
+middleware
+api endpoints
+bash commands 
+powershell commands
+unix commands
+django mvt
+example for decorator
+iterator and generator
+what idee we use
+python version
+deep copy shallow copy
+pickle unpicckle
+generate random num excep 3 and 4
+
+restful api's that uses http methods are -> get,put,post,delete
+time complexity and space complexity
+oops
+yield keyword and return
+abstraction
+datatypes
+data structure
+@classmethod and static method
+gil
+multi threading and multi processing
+restful api very important
+difference between having and where in sql
+difference between table and view
+stored procedure and function diff
+how to remove duplicates using python
+remove duplicates in sql
+how to show the duplicates in sql
+how to delete in python
+partition by
+how to read a excel
+how to write excel
+how to read csv
+how to read text file in spark
+lambda example
+continue break
+try except else finally
+pass
+10th highest salary
+10th highest salary by joining two tables
+how to edit first 5 columns in excel
+regex 
+regex ph num
+how to show the count in sql
+
+error handling, exception handdling
+union and join diff
+method overloading and riding
+polymorphysim
+class method and static method
+datatypes and operation(list tuple set dic and mutable?)
+
+
+bsnl claim
+payslip send to mail
+esop claim
+attend the meeting for exit orentation meeting 3pm to 5pm
+
+sortby and orderby difference
+how to add column values in pandas, sql, pyspark
+pyspark architecture
+
+---------------
+
+employee -> id name salary dep_id
+
+department -> dep_name dep_id
+
+
+select id, salary>3 from employee join department where dense_rnk(salary) order_by SALARY group_by dep_id
+
+
+us 
+
+
+1600000 7.5
+
+
+
+--------------
+
+class Parent(object):
+    x = 1
+class Child1(Parent):
+    pass
+
+class Child2(Parent):
+    pass
+
+print (Parent.x, Child1.x, Child2.x)
+Child1.x = 2
+
+print (Parent.x, Child1.x, Child2.x)
+Parent.x = 3
+
+print (Parent.x, Child1.x, Child2.x)
+
+----------------------
+
+raw - data quality validation, scoring dimension.reconci
+curation - transformation
+consumtion layer - 
+
+
+
+databricks - service ac
+cluster -  shared cluster - 8 persons can use
+
+
+------------------
+
+Program -Stack Data Structure
+Program -l1=["my     name       is    Rashmi   sachan"] then output is:sachan rashmi is name my  remove space and print reverse string with one space
+Design pattern in python
+Inheritance with Super keywords 
+ 
+  What is Multhreading have you implemented... by Amartya Chatterjee
+Amartya Chatterjee
+2:09 PM
+ 
+What is Multhreading have you implemented in project if yes then explain  Scanario
+Microservises
+How to prvent Multhreading( GIL)
+Related UI(How to connect database)
+Readymade template you used before for UIdesign
+Dender Method  In python
+Program LinkedList (Fined Mid value in linked list)-likeExample is linkedList(1,2,3,4,5) so output is 3
+Program Method Resolution Order 
+ 
+  what is MRO Write a program for console o... by Amartya Chatterjee
+Amartya Chatterjee
+2:09 PM
+ 
+what is MRO
+Write a program for console or file logging concept
+Explain Multithreading and Multiprocessing with practical example
+show  the "hello world" message on localhost using API service.
+What is async and use case
+if we access parent class from child class does memory allocated for parent class or not
+ 
+
+
+sql
+ groupby rank 
+
+ connectivity to database using python
+ pylist using the readme
+
+-----------------------
+
+what is secret scope
+collese and partition in pyspark
+how to load csv in pyspark
+if I have datatype mismatch in csv, what is the error I get when I load through pyspsk
+how to collected error rows to seperate file
+transition and transformation in pyspark
+how to top 3 salary (dense rank)
+adf
+how to remove row in pysaprk
+difference b/w api/rest api
+what is metadata
+find sql column with last 6 months of data
+
+
+rank() - 1,2,2,2,5,6
+dense_rank() - 1,2,2,2,3,4,5,6
+row_number() - allocate the numbers in consicutive order after ranking
+
+
+= copy and deepycopy with syntax
+
+
+gomoder
+
+df = spark.read.csv(file_path, header=True, escape = "\"")
+df.count()
+df.show(5,0)
+df.select('Customer').distinct().count()
+df.groupBy('Customer').agg(countDistinct(cust_id)).alias(ids).orderBy(desc(ids)).show()
+
+----------------
+
+interview questions for restapi 
+
+interview questions for restapi 
+
+difference between rdd and dataframe
+if error is not clear in spark, how to debug
+if i have memory issue in spark how to handle?
+how to read data from s3 using spark
+how to create rdd
+how to make connection to api or databases
+jdbc connection
+data preparation
+have you worked in hadoop
+how to handle missing data
+
+if i face memory issue while running an application what should i do?
+
