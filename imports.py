@@ -1,0 +1,74 @@
+from transformation_customerorder.current import \
+    transformation_customerorder_customer_order_header_convenience_tax_base2 as customer_order_header_convenience_tax, \
+    transformation_customerorder_customer_order_line_item_tax_base2 as customer_order_line_item_tax, \
+    transformation_customerorder_customer_order_line_promotion_base2 as customer_order_line_promotion, \
+    transformation_customerorder_customer_order_payment_base2 as customer_order_payment, \
+    transformation_customerorder_customer_order_line_unit_status_base2 as customer_order_line_unit_status,\
+    transformation_customerorder_customer_order_base2 as customer_order, \
+    transformation_customerorder_customer_order_donation_base2 as customer_order_donation, \
+    transformation_customerorder_customer_order_header_convenience_charge_base2 as customer_order_header_convenience_charge, \
+    transformation_customerorder_customer_order_line_item_base3 as customer_order_line_item, \
+    transformation_customerorder_oms_release_base1 as oms_release_base1, \
+    transformation_customerorder_oms_release_item_base1 as oms_release_item_base1, \
+    transformation_customerorder_oms_release_item_unit_tax_base1 as oms_release_item_unit_tax_base1, \
+    transformation_customerorder_oms_release_item_convenience_charge_base1 as oms_release_item_convenience_charge_base1, \
+    transformation_customerorder_oms_release_item_convenience_charge_tax_base1 as oms_release_item_convenience_charge_tax_base1, \
+    transformation_customerorder_oms_release_item_promotion_base1 as oms_release_item_promotion_base1, \
+    transformation_customerorder_oms_shipment_preference_base1 as oms_shipment_preference_base1, \
+    transformation_customerorder_oms_gift_preference_base1 as oms_gift_preference_base1, \
+    transformation_customerorder_oms_gift_preference_adjustment_base1 as oms_gift_preference_adjustment_base1, \
+    transformation_customerorder_oms_shipment_preference_adjustment_base1 as oms_shipment_preference_adjustment_base1, \
+    transformation_customerorder_oms_invoice_order_association_base1 as oms_invoice_order_association_base1, \
+    transformation_customerorder_oms_invoice_order_donation_base1 as oms_invoice_order_donation_base1, \
+    transformation_customerorder_oms_invoice_item_base1 as oms_invoice_item_base1, \
+    transformation_customerorder_oms_invoice_item_price_tax_base1 as oms_invoice_item_price_tax_base1, \
+    transformation_customerorder_oms_invoice_base1 as oms_invoice_base1, \
+    transformation_customerorder_oms_invoice_payment_base1 as oms_invoice_payment_base1, \
+    transformation_customerorder_oms_invoice_item_price_adjustment_tax_base1 as oms_invoice_item_price_adjustment_tax_base1, \
+    transformation_customerorder_invoice_order_donation_base2 as invoice_order_donation_base2, \
+    transformation_customerorder_invoice_order_association_base2 as invoice_order_association_base2, \
+    transformation_customerorder_invoice_item_base2 as invoice_item_base2, \
+    transformation_customerorder_invoice_item_price_tax_base2 as invoice_item_price_tax_base2, \
+    transformation_customerorder_convenience_charge_base2 as convenience_charge_base2, \
+    transformation_customerorder_convenience_charge_tax_base2 as convenience_charge_tax_base2, \
+    transformation_customerorder_invoice_item_price_adjustment_tax_base2 as invoice_item_price_adjustment_tax_base2, \
+    transformation_customerorder_invoice_base2 as invoice_base2, \
+    transformation_customerorder_invoice_payment_base2 as invoice_payment_base2
+
+transformation_classes = {
+    'customer_order_header_convenience_tax': customer_order_header_convenience_tax.DataTransformationBasePlusTwoCustomerOrderHeaderConvenienceTax,
+    'customer_order_line_item_tax': customer_order_line_item_tax.DataTransformationBasePlusTwoCustomerOrderLineItemTax,
+    'customer_order_line_promotion': customer_order_line_promotion.DataTransformationBasePlusTwoCustomerOrderLinePromotion,
+    'customer_order_payment': customer_order_payment.DataTransformationBasePlusTwoCustomerOrderPayment,
+    'customer_order_line_unit_status': customer_order_line_unit_status.DataTransformationBasePlusTwoCustomerOrderLineUnitStatus,
+    'customer_order_header_convenience_charge': customer_order_header_convenience_charge.DataTransformationBasePlusTwoCustomerOrderHeaderConvenienceCharge,
+    'customer_order': customer_order.DataTransformationBasePlusTwoCustomerOrder,
+    'customer_order_donation': customer_order_donation.DataTransformationBasePlusTwoCustomerOrderDonation,
+    'customer_order_line_item': customer_order_line_item.DataTransformationBasePlusThreeCustomerOrderLineItem,
+    'oms_release': oms_release_base1.DataTransformationBasePlusOneOmsRelease,
+    'oms_release_item': oms_release_item_base1.DataTransformationBasePlusOneOmsReleaseItem,
+    'oms_release_item_unit_tax': oms_release_item_unit_tax_base1.DataTransformationBasePlusOneOmsReleaseItemUnitTax,
+    'oms_release_item_convenience_charge': oms_release_item_convenience_charge_base1.DataTransformationBasePlusOneOmsReleaseItemConvenienceCharge,
+    'oms_release_item_convenience_charge_tax': oms_release_item_convenience_charge_tax_base1.DataTransformationBasePlusOneOmsReleaseItemConvenienceChargeTax,
+    'oms_release_item_promotion': oms_release_item_promotion_base1.DataTransformationBasePlusOneOmsReleaseItemPromotion,
+    'oms_shipment_preference': oms_shipment_preference_base1.DataTransformationBasePlusOneOmsShipmentPreference,
+    'oms_gift_preference': oms_gift_preference_base1.DataTransformationBasePlusOneOmsGiftPreference,
+    'oms_gift_preference_adjustment': oms_gift_preference_adjustment_base1.DataTransformationBasePlusOneOmsGiftPreferenceAdjustment,
+    'oms_shipment_preference_adjustment': oms_shipment_preference_adjustment_base1.DataTransformationBasePlusOneOmsShipmentPreferenceAdjustment,
+    'oms_invoice_order_association': oms_invoice_order_association_base1.DataTransformationBasePlusOneOmsInvoiceOrderAssociation,
+    'oms_invoice_order_donation': oms_invoice_order_donation_base1.DataTransformationBasePlusOneOmsInvoiceOrderDonation,
+    'oms_invoice_item': oms_invoice_item_base1.DataTransformationBasePlusOneOmsInvoiceItem,
+    'oms_invoice_item_price_tax': oms_invoice_item_price_tax_base1.DataTransformationBasePlusOneOmsInvoiceItemPriceTax,
+    'oms_invoice': oms_invoice_base1.DataTransformationBasePlusOneOmsInvoice,
+    'oms_invoice_payment': oms_invoice_payment_base1.DataTransformationBasePlusOneOmsInvoicePayment,
+    'oms_invoice_item_price_adjustment_tax': oms_invoice_item_price_adjustment_tax_base1.DataTransformationBasePlusOneOmsInvoiceItemPriceAdjustmentTax,
+    'invoice_order_donation': invoice_order_donation_base2.DataTransformationBasePlusTwoInvoiceOrderDonation,
+    'invoice_order_association': invoice_order_association_base2.DataTransformationBasePlusTwoInvoiceOrderAssociation,
+    'invoice_item':invoice_item_base2.DataTransformationBasePlusTwoInvoiceItem,
+    'invoice_item_price_tax':invoice_item_price_tax_base2.DataTransformationBasePlusTwoInvoiceItemPriceTax,
+    'convenience_charge':convenience_charge_base2.DataTransformationBasePlusTwoConvenienceCharge,
+    'convenience_charge_tax':convenience_charge_tax_base2.DataTransformationBasePlusTwoConvenienceChargeTax,
+    'invoice_item_price_adjustment_tax':invoice_item_price_adjustment_tax_base2.DataTransformationBasePlusTwoinvoiceitemPriceAdjustmentTax,
+    'invoice': invoice_base2.DataTransformationBasePlusTwoInvoice,
+    'invoice_payment': invoice_payment_base2.DataTransformationBasePlusTwoInvoicePayment
+}
